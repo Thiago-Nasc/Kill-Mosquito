@@ -1,0 +1,126 @@
+/* zerando css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    font-family: Helvetica;
+}
+
+html {
+    cursor: url('../imagens/mata_mosca.png') 30 30, auto;
+}
+
+
+/* criando cenário */
+body {
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* classes do mosquito */
+.mosquito1 {
+    width: 50px;
+    height: 50px;
+}
+
+.mosquito2 {
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito3 {
+    width: 90px;
+    height: 90px;
+}
+
+.lado1 {
+    transform: scaleX(-1);
+}
+
+.lado2 {
+    transform: scaleX(1);
+}
+
+
+/* estilizando painel */
+#painel {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#cronometro {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* páginas index, vitoria e derrota */
+
+.game-over, .vitoria, .index {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nivel {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#nivel option {
+    text-align: center;
+}
+
+#botao {
+    width: 240px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #727272;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+#botao:hover {
+    background-color: #525252;
+}
+
+#botaoIndex {
+    width: 240px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(194, 32, 86);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+#botaoIndex:hover {
+    background-color:rgb(231, 15, 69)
+}
+
+/* Fim */
